@@ -1,0 +1,20 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: emall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.110.155:8848
+    #表明gateway开启服务注册和发现的功能，gateway为每一个服务创建了一个router，这个router将以服务名开头的请求路径转发到对应的服务。
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#        - id: user-route
+#          uri: lb://user
+#          predicates:
+#            - Path=/user/**
