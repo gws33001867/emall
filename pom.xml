@@ -17,6 +17,7 @@
         <module>emall-order</module>
         <module>emall-stock</module>
         <module>emall-gateway</module>
+        <module>oauth-server</module>
     </modules>
 
     <!-- 父工程 -->
