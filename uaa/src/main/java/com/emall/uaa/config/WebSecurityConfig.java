@@ -24,7 +24,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        super.configure(auth);
+        auth.inMemoryAuthentication()
+                .withUser("admin")
+                .password(passwordEncoder().encode("123"))
+                .roles("admin")
+                .and()
+                .withUser("user")
+                .password(passwordEncoder().encode("123"))
+                .roles("user");
     }
 
     /**
@@ -67,6 +74,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        super.configure(http);
+        http
+                .authorizeRequests()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
+                .loginProcessingUrl("/login")
+                .permitAll()
+                .and()
+                .csrf()
+                .disable();
     }
 }
