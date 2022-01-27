@@ -2,7 +2,7 @@ package com.emall.uaa.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.emall.uaa.dao.UserMapper;
-import com.emall.uaa.entity.UserEntity;
+import com.emall.uaa.model.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

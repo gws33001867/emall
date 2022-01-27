@@ -1,7 +1,7 @@
 package com.emall.uaa;
 
 import com.emall.uaa.dao.UserMapper;
-import com.emall.uaa.entity.UserEntity;
+import com.emall.uaa.model.UserEntity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

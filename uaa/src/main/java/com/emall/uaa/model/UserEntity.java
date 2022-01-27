@@ -1,6 +1,5 @@
-package com.emall.uaa.entity;
+package com.emall.uaa.model;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.SuperBuilder;
 

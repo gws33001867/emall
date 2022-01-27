@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.26.235.202:8848
+        file-extension: yml
+        namespace: ee0ac582-08e0-4484-b6db-5278de31a87b
+  profiles:
+    active: dev
+

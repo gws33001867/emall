@@ -1,4 +1,4 @@
-package com.emall.uaa.entity;
+package com.emall.uaa.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
